@@ -293,15 +293,16 @@ main .work-proc .work-programms{
 
 main .work-proc .work-programms div{
   width: 18%;
-  height: 280px;
+  height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   color: #fff;
   padding-bottom: 10px;
   padding-top: 10px;
   margin: 30px;
+  position: relative;
  
   -webkit-box-shadow: 1px 1px 20px 5px rgba(34, 60, 80, 0.2);
 -moz-box-shadow: 1px 1px 20px 5px rgba(34, 60, 80, 0.2);
@@ -331,6 +332,8 @@ main .work-proc .work-programms div p:nth-child(2){
 }
 
 main .work-proc .work-programms div button{
+  position: absolute;
+  bottom: 10px;
   width: 70%;
   font-size: 19px;
   margin-top: 40px;
