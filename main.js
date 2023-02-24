@@ -5,6 +5,9 @@ const hamburger=document.querySelector('.hamburger')
 const closer=document.querySelector('.closer')
 const menu=document.querySelector('.menu')
 
+const work_buttons=document.querySelectorAll('#work-btn')
+const scratch_btn=document.querySelectorAll('#scratch-btn')
+
 
 
 
@@ -37,3 +40,32 @@ arrow_btn.addEventListener('click',()=>{
 form.addEventListener('submit',(e)=>{
     e.preventDefault()
 })
+
+
+
+
+work_buttons.forEach(item=>{
+    item.addEventListener('click',function(){
+       for(let i=0;i<=work_buttons.length;i++){
+        if(work_buttons[i]!==item){
+            work_buttons[i].parentNode.style.display='none'
+        }
+        else{
+            work_buttons[i].parentNode.classList.add('chosen')
+        }
+       }
+       
+       
+    })
+})
+
+scratch_btn.forEach(item=>{
+    item.addEventListener('click',function(){
+        this.parentNode.classList.remove('chosen')
+        for(let i=0;i<work_buttons.length;i++){
+           work_buttons[i].parentNode.style.display='flex'
+        }
+    })
+})
+
+
