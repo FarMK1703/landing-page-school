@@ -59,6 +59,8 @@ work_buttons.forEach(item=>{
     })
 })
 
+
+
 scratch_btn.forEach(item=>{
     item.addEventListener('click',function(){
         this.parentNode.classList.remove('chosen')
@@ -67,5 +69,14 @@ scratch_btn.forEach(item=>{
         }
     })
 })
+
+
+let element = document.getElementById('phone');
+let maskOptions = {
+  mask: '+{998}(00)000-00-00'
+};
+
+let mask = IMask(element, maskOptions);
+
 
 

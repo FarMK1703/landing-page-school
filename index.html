@@ -19,6 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/imask"></script>
     <title>LevelEng</title>
 </head>
 
@@ -26,9 +27,9 @@
 
     <div class="menu">
         <ul>
-            <li onclick="document.querySelector('.work-proc').scrollIntoView({behavior:'smooth',block:'end'})">Главное</li>
-            <li>О нас</li>
-            <li>Контакты</li>
+            <li onclick="document.querySelector('.work-proc').scrollIntoView({behavior:'smooth',block:'end'}); toggleActive()">Наши курсы</li>
+            
+            <li onclick="document.querySelector('footer').scrollIntoView({behavior:'smooth',block:'end'}); toggleActive()">Контакты</li>
 
             <div class="closer">
             
@@ -122,7 +123,8 @@
                     <img src="./assets/thumbs-up-up-yes-approve-svgrepo-com.svg" alt="" srcset="">
                     <p>Специальное предложение для новичков!</p>
                     <p>Первый пробный урок бесплатно!</p>
-                    <button>Попробовать</button>
+                    <button onclick="document.querySelector('.modal-window').style.display='flex'">Попробовать</button>
+                    
                 </div>
             </div>
         </div>
@@ -192,7 +194,7 @@
         <form id="form" action="">
             <p>Отправьте <span>сообщение</span> для обратной связи</p>
             <input placeholder="Ваше имя" type="text">
-            <input placeholder="Ваш Email" style="margin-top: 20px;" type="email">
+            <input placeholder="+998(  )" style="margin-top: 20px;" type="text" id="phone">
             <textarea placeholder="Ваше сообщение" name="" id="" cols="30" rows="10"></textarea>
             <button type="submit">Отправить</button>
             
@@ -206,6 +208,24 @@
         
       </ul>
     </footer>
+
+
+
+
+
+    <div class="modal-window">
+        <div class="modal-window-content">
+            <p>Способы связаться с <span>нами</span></p>
+            <p>Вы можете воспользоваться любым из способов приведенных ниже. <br>Получите беспалтную консультацию и подбор индивидуальной программы под себя</p>
+            <ul>
+                <li>1. Вы можете воспользоваться <span>формой</span> обратной связи</li>
+                <li>2. Можете воспользоваться социальными сетями: </li>
+                <li>3. Либо позвоните по прямому номеру: <span><a href="tel:+99893 424-21-85 ">+99893 424-21-85</a></span></li>
+            </ul>
+
+            <div onclick="document.querySelector('.modal-window').style.display='none'" class="close-modal"></div>
+        </div>
+    </div>
 
 
 
