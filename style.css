@@ -41,6 +41,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
+html{
+  overflow-x: hidden;
+}
+
 
 body{
   
@@ -53,6 +57,7 @@ body{
 body::-webkit-scrollbar {
   width: 3px;               /* ширина всей полосы прокрутки */
 }
+
 
 body::-webkit-scrollbar-thumb {
   background-color: #FF5C36;    /* цвет бегунка */
@@ -112,8 +117,8 @@ body::-webkit-scrollbar-thumb {
   width: 50px;
   height: 50px;
   position: absolute;
-  right: 30px;
-  top:30px;
+  right: 5%;
+  top:5%;
   cursor: pointer;
   
 }
@@ -128,13 +133,11 @@ body::-webkit-scrollbar-thumb {
 header{
   width: 100%;
   background-color: #F5F5F5;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 50px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: relative;
  
   
@@ -156,6 +159,13 @@ header nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  top: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  
+  
 }
 
 
@@ -204,7 +214,7 @@ header nav .hamburger ul li{
 
 header h1{
   text-align: center;
-  margin-top: 200px;
+
   color: rgba(23,15,28,1);
   font-size: 50px;
   font-weight: 500;
@@ -283,7 +293,7 @@ main .work-proc h2 span{
 main .work-proc p{
   margin-top: 10px;
   text-align: center;
-  width: 600px;
+  max-width: 600px;
   font-size: 16px;
   opacity: 0.6;
 }
@@ -419,8 +429,8 @@ main .why-we{
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 5%;
+  padding-right: 5%;
 
   background-color: #F5F5F5;
 }
@@ -879,4 +889,166 @@ footer ul a li:hover{
   position: absolute;
   top:10px;
   right: 10px;
+}
+
+
+@media(max-width:1025px){
+
+main .work-proc{
+  height: 100%;
+  
+}
+
+  .work-programms{
+    flex-wrap: wrap;
+  }
+
+  main .work-proc .work-programms div{
+    width: 30%;
+    
+  }
+
+  main .work-proc .work-programms .chosen{
+    height: 600px;
+  }
+
+  main .why-we .why-we-desc .info ul{
+    padding-left: 20px;
+  }
+
+  main .why-we .why-we-desc .info{
+    width: 50%;
+  }
+
+  main .why-we .why-we-desc .image{
+    width: 50%;
+  }
+
+  main .why-we .why-we-desc .image{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+@media(max-width:768px){
+  main .work-proc .work-programms div{
+    width: 40%;
+    margin: 10px;
+    
+  }
+}
+
+@media(max-width:426px){
+  header p{
+    width: 90%;
+    font-size: 19px;
+  }
+
+  header h1{
+    font-size: 32px;
+  }
+
+  main .work-proc .work-programms div{
+    width: 90%;
+  }
+
+  main .work-proc .work-programms .chosen{
+    height: 100vh;
+  }
+
+  main .work-proc .work-programms div button{
+    width: 60%;
+  }
+
+  main .why-we .why-we-desc{
+    flex-direction: column;
+  }
+  main .why-we .why-we-desc .info{
+    width: 100%;
+  }
+
+  main .why-we .why-we-desc .image{
+    width: 100%;
+    height: 50%;
+  }
+  main .why-we{
+    height: 100%;
+    height: 50%;
+  }
+
+  main .why-we .why-we-desc .image button{
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  main .why-we .why-we-desc .image img{
+    width: 80px;
+  }
+
+  main .clients .carousel .client-card-wrapper .client-card {
+    margin: 0;
+    height: 280px;
+    width: 100%;
+  }
+  main .clients .carousel .client-card-wrapper .client-card .stars{
+    height: 80px;
+  }
+  main .clients .carousel .client-card-wrapper .client-card p{
+    margin-bottom: 0;
+  }
+
+  .carousel-item{
+    padding: 25px;
+  }
+
+  footer .form-wrapper form{
+    width: 100%;
+  }
+
+  footer ul{
+    width: 70%;
+  }
+  .modal-window .modal-window-content{
+    width: 100%;
+    padding: 20px;
+  }
+
+  .modal-window .modal-window-content p{
+    margin: 0;
+    margin-top: 5px;
+  }
+  .modal-window .modal-window-content ul{
+    margin-top: 10px;
+  }
+
+  .close-modal{
+    top: 3px;
+    right: 3px;
+  }
+}
+
+
+@media(max-width:320px){
+  main .why-we{
+    padding: 0;
+  }
+
+  main .clients .carousel .client-card-wrapper .client-card{
+    height: 320px;
+  }
+
+  footer .form-wrapper form input{
+    width: 95%;
+  }
+  footer .form-wrapper form textarea{
+    width: 95%;
+  }
+
+  footer ul{
+    width: 90%;
+  }
+  .menu{
+    width: 200px;
+  }
 }

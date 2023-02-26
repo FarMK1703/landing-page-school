@@ -52,6 +52,10 @@ work_buttons.forEach(item=>{
         }
         else{
             work_buttons[i].parentNode.classList.add('chosen')
+            document.querySelector('.work-proc').scrollIntoView({
+                behavior:"smooth",
+                block:'start'
+            })
         }
        }
        
