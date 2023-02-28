@@ -27,16 +27,20 @@
 
     <div class="menu">
         <ul>
-            <li onclick="document.querySelector('.work-proc').scrollIntoView({behavior:'smooth',block:'end'}); toggleActive()">Наши курсы</li>
-            
-            <li onclick="document.querySelector('footer').scrollIntoView({behavior:'smooth',block:'end'}); toggleActive()">Контакты</li>
+            <li
+                onclick="document.querySelector('.work-proc').scrollIntoView({behavior:'smooth',block:'end'}); toggleActive()">
+                Наши курсы</li>
+
+            <li
+                onclick="document.querySelector('footer').scrollIntoView({behavior:'smooth',block:'end'}); toggleActive()">
+                Контакты</li>
 
             <div class="closer">
-            
+
             </div>
         </ul>
 
-      
+
     </div>
 
 
@@ -63,6 +67,21 @@
     </header>
 
     <main>
+
+
+        <div class="quiz">
+            <p>Проверьте свои <span>знания</span></p>
+            <div class="quiz-game">
+                <div class="quiz-game-question"></div>
+                <div class="quiz-game-answers"></div>
+                <button id="quiz-btn">Начать</button>
+                <div class="nav_btns">
+                    <button id="btn_prev">
+                        <</button>
+                            <button id="btn_next">></button></div>
+                            <button id="reload">Заново</button>
+            </div>
+        </div>
 
         <div class="work-proc">
             <h2>Методичесие <span>курсы</span></h2>
@@ -124,7 +143,7 @@
                     <p>Специальное предложение для новичков!</p>
                     <p>Первый пробный урок бесплатно!</p>
                     <button onclick="document.querySelector('.modal-window').style.display='flex'">Попробовать</button>
-                    
+
                 </div>
             </div>
         </div>
@@ -144,20 +163,26 @@
                         <div class="carousel-item active">
                             <div class="client-card-wrapper">
                                 <div class="client-card">
-                                    <img src="./assets/profile-circle-svgrepo-com.svg" alt="#"/>
-                                    <p class="text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus inventore, unde quae ullam cumque suscipit! Ullam quo esse consequuntur necessitatibus, rem temporibus voluptate vitae, mollitia amet, cumque non placeat?"</p>
+                                    <img src="./assets/profile-circle-svgrepo-com.svg" alt="#" />
+                                    <p class="text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                                        repellendus inventore, unde quae ullam cumque suscipit! Ullam quo esse
+                                        consequuntur necessitatibus, rem temporibus voluptate vitae, mollitia amet,
+                                        cumque non placeat?"</p>
                                     <img class='stars' src="./assets/stars-svgrepo-com.svg" alt="">
                                     <p class="name">- Lorem</p>
                                 </div>
-                                
+
                             </div>
-                            
+
                         </div>
                         <div class="carousel-item">
                             <div class="client-card-wrapper">
                                 <div class="client-card">
-                                    <img src="./assets/profile-circle-svgrepo-com.svg" alt="#"/>
-                                    <p class="text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus inventore, unde quae ullam cumque suscipit! Ullam quo esse consequuntur necessitatibus, rem temporibus voluptate vitae, mollitia amet, cumque non placeat?"</p>
+                                    <img src="./assets/profile-circle-svgrepo-com.svg" alt="#" />
+                                    <p class="text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                                        repellendus inventore, unde quae ullam cumque suscipit! Ullam quo esse
+                                        consequuntur necessitatibus, rem temporibus voluptate vitae, mollitia amet,
+                                        cumque non placeat?"</p>
                                     <img class='stars' src="./assets/stars-svgrepo-com.svg" alt="">
                                     <p class="name">- Lorem</p>
                                 </div>
@@ -166,8 +191,11 @@
                         <div class="carousel-item">
                             <div class="client-card-wrapper">
                                 <div class="client-card">
-                                    <img src="./assets/profile-circle-svgrepo-com.svg" alt="#"/>
-                                    <p class="text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus inventore, unde quae ullam cumque suscipit! Ullam quo esse consequuntur necessitatibus, rem temporibus voluptate vitae, mollitia amet, cumque non placeat?"</p>
+                                    <img src="./assets/profile-circle-svgrepo-com.svg" alt="#" />
+                                    <p class="text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                                        repellendus inventore, unde quae ullam cumque suscipit! Ullam quo esse
+                                        consequuntur necessitatibus, rem temporibus voluptate vitae, mollitia amet,
+                                        cumque non placeat?"</p>
                                     <img class='stars' src="./assets/stars-svgrepo-com.svg" alt="">
                                     <p class="name">- Lorem</p>
                                 </div>
@@ -190,23 +218,29 @@
 
 
     <footer>
-      <div class="form-wrapper">
-        <form id="form" action="">
-            <p>Отправьте <span>сообщение</span> для обратной связи</p>
-            <input placeholder="Ваше имя" type="text">
-            <input placeholder="+998(  )" style="margin-top: 20px;" type="text" id="phone">
-            <textarea placeholder="Ваше сообщение" name="" id="" cols="30" rows="10"></textarea>
-            <button type="submit">Отправить</button>
-            
-        </form>
-      </div>
+        <div class="form-wrapper">
+            <form id="form" action="">
+                <p>Отправьте <span>сообщение</span> для обратной связи</p>
+                <input placeholder="Ваше имя" type="text">
+                <input placeholder="+998(  )" style="margin-top: 20px;" type="text" id="phone">
+                <textarea placeholder="Ваше сообщение" name="" id="" cols="30" rows="10"></textarea>
+                <button type="submit">Отправить</button>
 
-      <ul>
-        <a href="https://t.me/voyager1_v"><li style="background-image: url('./assets/telegram-svgrepo-com.svg');"></li></a>
-        <a href="tel: =998934242185"><li style="background-image: url('./assets/phone-svgrepo-com\ \(1\).svg');"></li></a>
-        <a href=""><li style="background-image: url('./assets/mail-svgrepo-com.svg');"></li></a>
-        
-      </ul>
+            </form>
+        </div>
+
+        <ul>
+            <a href="https://t.me/voyager1_v">
+                <li style="background-image: url('./assets/telegram-svgrepo-com.svg');"></li>
+            </a>
+            <a href="tel: =998934242185">
+                <li style="background-image: url('./assets/phone-svgrepo-com\ \(1\).svg');"></li>
+            </a>
+            <a href="">
+                <li style="background-image: url('./assets/mail-svgrepo-com.svg');"></li>
+            </a>
+
+        </ul>
     </footer>
 
 
@@ -216,11 +250,13 @@
     <div class="modal-window">
         <div class="modal-window-content">
             <p>Способы связаться с <span>нами</span></p>
-            <p>Вы можете воспользоваться любым из способов приведенных ниже. <br>Получите беспалтную консультацию и подбор индивидуальной программы под себя</p>
+            <p>Вы можете воспользоваться любым из способов приведенных ниже. <br>Получите беспалтную консультацию и
+                подбор индивидуальной программы под себя</p>
             <ul>
                 <li>1. Вы можете воспользоваться <span>формой</span> обратной связи</li>
                 <li>2. Можете воспользоваться социальными сетями: </li>
-                <li>3. Либо позвоните по прямому номеру: <span><a href="tel:+99893 424-21-85 ">+99893 424-21-85</a></span></li>
+                <li>3. Либо позвоните по прямому номеру: <span><a href="tel:+99893 424-21-85 ">+99893
+                            424-21-85</a></span></li>
             </ul>
 
             <div onclick="document.querySelector('.modal-window').style.display='none'" class="close-modal"></div>

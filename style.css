@@ -388,6 +388,109 @@ main .work-proc .work-programms div button{
   display: none;
 }
 
+main .quiz{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+main .quiz p{
+  font-size: 40px;
+  opacity: 0.6;
+  position: absolute;
+  top:50px;
+}
+
+main .quiz p span{
+  color: #FF5C36;
+}
+
+main .quiz .quiz-game{
+  width: 600px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+main .quiz .quiz-game .quiz-game-question{
+  position: absolute;
+  top: 30px;
+  font-size: 22px;
+}
+
+main .quiz .quiz-game #quiz-btn{
+  position: absolute;
+  bottom: 10px;
+  font-size: 19px;
+  padding: 10px;
+  background-color: #FF5C36;
+  color: #fff;
+}
+main .quiz .quiz-game .nav_btns{
+  position: absolute;
+  bottom: 10px;
+  display: none;
+  
+
+  
+}
+
+main .quiz .quiz-game #reload{
+  position: absolute;
+  bottom: 10px;
+  font-size: 19px;
+  padding: 10px;
+  background-color: #FF5C36;
+  color: #fff;
+  display: none;
+}
+
+main .quiz .quiz-game .nav_btns button{
+  font-size: 19px;
+  padding: 10px;
+  background-color: #FF5C36;
+  color: #fff;
+}
+
+main .quiz .quiz-game-answers{
+  width: 70%;
+
+}
+
+main .quiz .quiz-game .answers{
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+main .quiz .quiz-game .answers input{
+  appearance: none;
+
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+}
+
+main .quiz .quiz-game .answers input:checked{
+  background-color: #FF5C36;
+}
+
 main .work-proc .work-programms div button span{
   font-size: 23px;
 }
@@ -451,7 +554,6 @@ main .why-we h3 span{
 
 main .why-we .why-we-desc{
   width: 100%;
-  height: 70%;
   margin-top: 70px;
   display: flex;
   
