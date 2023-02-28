@@ -434,6 +434,7 @@ main .quiz .quiz-game #quiz-btn{
   font-size: 19px;
   padding: 10px;
   background-color: #FF5C36;
+  border: 1px solid transparent;
   color: #fff;
 }
 main .quiz .quiz-game .nav_btns{
@@ -453,6 +454,12 @@ main .quiz .quiz-game #reload{
   background-color: #FF5C36;
   color: #fff;
   display: none;
+  border: 1px solid transparent;
+}
+main .quiz .quiz-game #reload:hover,main .quiz .quiz-game .nav_btns button:hover,main .quiz .quiz-game #quiz-btn:hover{
+  background-color: transparent;
+  border: 1px solid #FF5C36;
+  color: #FF5C36;
 }
 
 main .quiz .quiz-game .nav_btns button{
@@ -460,6 +467,7 @@ main .quiz .quiz-game .nav_btns button{
   padding: 10px;
   background-color: #FF5C36;
   color: #fff;
+  border: 1px solid transparent;
 }
 
 main .quiz .quiz-game-answers{
