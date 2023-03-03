@@ -38,6 +38,10 @@ const quiz = [
 let question_id = 0
 let results = []
 
+chat_ID = `-924847416`
+const token = `6102998931:AAFwi6UXLX64EeRoPHtDFxCouJkF8CtKmq0`
+const uriApi = `https://api.telegram.org/bot${token}/sendMessage`
+
 
 
 
@@ -74,11 +78,11 @@ const updateFrame = (i) => {
         item.addEventListener('change', () => {
 
             quiz[i][1].answers[index].checked = true
-            if(quiz[i][1].answers[index].isRight===true){
+            if (quiz[i][1].answers[index].isRight === true) {
                 results.push(quiz[i][1].answers[index].isRight)
-            console.log(results)
+                console.log(results)
             }
-            
+
 
         })
     })
@@ -95,30 +99,30 @@ const updateFrame = (i) => {
 
 const showResult = () => {
     let counter = results.length
-    
+
     console.log(counter)
     document.querySelector('.quiz-game-answers').innerHTML = ''
     document.querySelector('.quiz-game-answers').innerHTML += `<div class='asnwer'>Ваш результат:${counter} </div>`
     document.querySelector('.nav_btns').style.display = 'none'
-    document.getElementById('reload').style.display='block'
+    document.getElementById('reload').style.display = 'block'
 }
 
 
-const reload=()=>{
-    for(let i=0;i<quiz.length;i++){
-        quiz[i][1].answers.map(item=>{
-            item.checked=false
+const reload = () => {
+    for (let i = 0; i < quiz.length; i++) {
+        quiz[i][1].answers.map(item => {
+            item.checked = false
         })
     }
-    results=[]
-    question_id=0
+    results = []
+    question_id = 0
 
     console.log(quiz)
     updateFrame(question_id)
-    document.getElementById('reload').style.display='none'
+    document.getElementById('reload').style.display = 'none'
     document.querySelector('.nav_btns').style.display = 'block'
 
-    
+
 
 
 }
@@ -149,7 +153,7 @@ document.getElementById('btn_prev').addEventListener('click', function () {
 })
 
 
-document.getElementById('reload').addEventListener('click',()=>{
+document.getElementById('reload').addEventListener('click', () => {
     reload()
 })
 
@@ -180,9 +184,33 @@ arrow_btn.addEventListener('click', () => {
 
 
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', async function (e) {
     e.preventDefault()
+    try {
+        let text = `<b>Сообщение от: </b>${this.name.value}\n`
+        text += `<b>Номер телефона: </b>${this.phone.value}\n`
+        text += `<b>Текст: </b>${this.text.value}`
+
+
+        const postApi = await axios.post(uriApi, {
+            chat_id: chat_ID,
+            text: text,
+            parse_mode: 'HTML'
+
+        },)
+        console.log(postApi)
+    }
+
+    catch (error) {
+        console.log(error)
+    }
 })
+
+
+
+
+
+
 
 
 

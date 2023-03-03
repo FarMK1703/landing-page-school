@@ -20,6 +20,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/imask"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>LevelEng</title>
 </head>
 
@@ -58,9 +59,11 @@
         </nav>
 
 
-        <h1>Изучение английского <span>онлайн</span></h1>
-        <p>Английский язык является самым востребованным в мире. И мы поможем вам в его узичении. Наша онлайн школа
-            подойдет как для совсем новичков, так и для тех, кто уже имеет опыт, но хочет улучшить свои показатели</p>
+        <h1>Онлайн школа <span>английского языка</span><br />Самый востребованный в мире язык вместе с
+            <span>LevelENG</span></h1>
+        <p>Гибкий график и значительная экономия вашего времени и средств - очевидные плюсы онлайн обучения в нашей
+            школе. А тщательно подобранные материалы и современная методика сделают процесс изучения английского языка
+            плавным и эффективным.</p>
         <div class="arrow">
 
         </div>
@@ -77,15 +80,16 @@
                 <button id="quiz-btn">Начать</button>
                 <div class="nav_btns">
                     <button id="btn_prev">
-                        <</button>
-                            <button id="btn_next">></button></div>
-                            <button id="reload">Заново</button>
+                        << /button>
+                            <button id="btn_next">></button>
+                </div>
+                <button id="reload">Заново</button>
             </div>
         </div>
 
         <div class="work-proc">
-            <h2>Методичесие <span>курсы</span></h2>
-            <p>Попробуйте наши курсы разработанные для любого уровня</p>
+            <h2>Доступные <span>курсы</span></h2>
+            <p>Следующие курсы разработаны для планомерного изучения самых востребованных направлений</p>
 
 
             <div class="work-programms">
@@ -219,18 +223,18 @@
 
     <footer>
         <div class="form-wrapper">
-            <form id="form" action="">
+            <form id="form">
                 <p>Отправьте <span>сообщение</span> для обратной связи</p>
-                <input placeholder="Ваше имя" type="text">
-                <input placeholder="+998(  )" style="margin-top: 20px;" type="text" id="phone">
-                <textarea placeholder="Ваше сообщение" name="" id="" cols="30" rows="10"></textarea>
+                <input name="name" placeholder="Ваше имя" type="text" required>
+                <input name="phone" placeholder="+998(  )" style="margin-top: 20px;" type="text" id="phone" required>
+                <textarea name="text" placeholder="Ваше сообщение" name="" id="" cols="30" rows="10"></textarea>
                 <button type="submit">Отправить</button>
 
             </form>
         </div>
 
         <ul>
-            <a href="https://t.me/voyager1_v">
+            <a href="https://t.me/OnLevelEng">
                 <li style="background-image: url('./assets/telegram-svgrepo-com.svg');"></li>
             </a>
             <a href="tel: =998934242185">
