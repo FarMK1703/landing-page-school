@@ -59,11 +59,8 @@
         </nav>
 
 
-        <h1>Онлайн школа <span>английского языка</span><br />Самый востребованный в мире язык вместе с
-            <span>LevelENG</span></h1>
-        <p>Гибкий график и значительная экономия вашего времени и средств - очевидные плюсы онлайн обучения в нашей
-            школе. А тщательно подобранные материалы и современная методика сделают процесс изучения английского языка
-            плавным и эффективным.</p>
+        <h1>Изучайте самый востребованный язык вместе с онлайн школой <span>LevelENG</span></h1>
+        <p>Наша команда предлагает качественно подобранные материалы и гибкий график для студентов всех возрастов. А современная методика и индивидуальный подход сделают ваш процесс обучения более плавным и эффективным</p>
         <div class="arrow">
 
         </div>
@@ -72,18 +69,27 @@
     <main>
 
 
-        <div class="quiz">
-            <p>Проверьте свои <span>знания</span></p>
-            <div class="quiz-game">
-                <div class="quiz-game-question"></div>
-                <div class="quiz-game-answers"></div>
-                <button id="quiz-btn">Начать</button>
-                <div class="nav_btns">
-                    <button id="btn_prev">
-                        << /button>
-                            <button id="btn_next">></button>
+       
+        <div class="why-we">
+            <h3>Почему именно <span>мы?</span></h3>
+            <div class="why-we-desc">
+                <div class="info">
+                    <p>Мы предлагаем</p>
+                    <hr>
+                    <ul>
+                        <li><img src="./assets/coin-svgrepo-com.svg" />Выгодные цены</li>
+                        <li><img src="./assets/quality-certificate-award-svgrepo-com.svg" />Гарантии качества</li>
+                        <li><img src="./assets/certified-svgrepo-com.svg" />Профессиональные преподаватели</li>
+                        <li><img src="./assets/conversation-svgrepo-com.svg" />Приятная атмосфера на уроках</li>
+                    </ul>
                 </div>
-                <button id="reload">Заново</button>
+                <div class="image">
+                    <img src="./assets/thumbs-up-up-yes-approve-svgrepo-com.svg" alt="" srcset="">
+                    <p>Специальное предложение для новичков!</p>
+                    <p>Первый пробный урок бесплатно!</p>
+                    <button onclick="document.querySelector('.modal-window').style.display='flex'">Попробовать</button>
+
+                </div>
             </div>
         </div>
 
@@ -128,29 +134,22 @@
 
             </div>
         </div>
-
-        <div class="why-we">
-            <h3>Почему именно <span>мы?</span></h3>
-            <div class="why-we-desc">
-                <div class="info">
-                    <p>Мы предлагаем</p>
-                    <hr>
-                    <ul>
-                        <li><img src="./assets/coin-svgrepo-com.svg" />Выгодные цены</li>
-                        <li><img src="./assets/quality-certificate-award-svgrepo-com.svg" />Гарантии качества</li>
-                        <li><img src="./assets/certified-svgrepo-com.svg" />Профессиональные преподаватели</li>
-                        <li><img src="./assets/conversation-svgrepo-com.svg" />Приятная атмосфера на уроках</li>
-                    </ul>
+        <div class="quiz">
+            <p>Проверьте свои <span>знания</span></p>
+            <div class="quiz-game">
+                <div class="quiz-game-question"></div>
+                <div class="quiz-game-answers"></div>
+                <button id="quiz-btn">Начать</button>
+                <div class="nav_btns">
+                    <button id="btn_prev">
+                        <</button>
+                            <button id="btn_next"> ></button>
                 </div>
-                <div class="image">
-                    <img src="./assets/thumbs-up-up-yes-approve-svgrepo-com.svg" alt="" srcset="">
-                    <p>Специальное предложение для новичков!</p>
-                    <p>Первый пробный урок бесплатно!</p>
-                    <button onclick="document.querySelector('.modal-window').style.display='flex'">Попробовать</button>
-
-                </div>
+                <button id="reload">Заново</button>
             </div>
         </div>
+
+        
 
 
 
@@ -264,6 +263,12 @@
             </ul>
 
             <div onclick="document.querySelector('.modal-window').style.display='none'" class="close-modal"></div>
+        </div>
+    </div>
+
+    <div class="form-sended-wrapper">
+        <div class="form-sended">
+            <p>Ваше сообщение успешно отправлено</p>
         </div>
     </div>
 

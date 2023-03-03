@@ -45,8 +45,6 @@ const uriApi = `https://api.telegram.org/bot${token}/sendMessage`
 
 
 
-
-
 const updateFrame = (i) => {
 
 
@@ -199,6 +197,13 @@ form.addEventListener('submit', async function (e) {
 
         },)
         console.log(postApi)
+
+        if(postApi){
+           document.querySelector('.form-sended-wrapper').style.display='flex'
+           setTimeout(()=>{
+            document.querySelector('.form-sended-wrapper').style.display='none'
+           },2000)
+        }
     }
 
     catch (error) {
