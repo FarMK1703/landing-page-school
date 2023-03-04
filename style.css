@@ -407,6 +407,12 @@ main .quiz p{
   top:50px;
 }
 
+main .quiz .quizIndexCounter{
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+}
+
 main .quiz p span{
   color: #FF5C36;
 }
@@ -427,7 +433,9 @@ box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 main .quiz .quiz-game .quiz-game-question{
   position: absolute;
   top: 30px;
-  font-size: 22px;
+  font-size: 20px;
+  max-width: 80%;
+  line-height: 30px;
 }
 
 main .quiz .quiz-game #quiz-btn{
@@ -474,7 +482,21 @@ main .quiz .quiz-game .nav_btns button{
 
 main .quiz .quiz-game-answers{
   width: 70%;
+  margin-top: 50px;
 
+}
+main .quiz .quiz-game-answers .result{
+ width: 100%;
+ 
+}
+
+main .quiz .quiz-game-answers .result p{
+  position: unset;
+  font-size: 16px;
+  line-height: 20px;
+}
+main .quiz .quiz-game-answers .result p span{
+  color: #FF5C36;
 }
 
 main .quiz .quiz-game .answers{
@@ -1020,14 +1042,22 @@ footer ul a li:hover{
 
 .form-sended-wrapper .form-sended{
   position: relative;
- padding: 30px;
+  padding: 70px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 25px;
+  font-size: 22px;
 
+}
+
+.form-sended-wrapper .form-sended .form-sended-icon{
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
 }
 
 
@@ -1098,6 +1128,12 @@ main .work-proc{
 
   main .work-proc .work-programms div button{
     width: 60%;
+  }
+  main .quiz .quiz-game-answers{
+    margin-top: 100px;
+  }
+  main .quiz .quiz-game-answers{
+    width: 90%;
   }
 
   main .why-we .why-we-desc{
