@@ -452,7 +452,7 @@ closer.addEventListener('click', () => {
 
 
 arrow_btn.addEventListener('click', () => {
-    work_proc_block.scrollIntoView({
+    document.querySelector('.why-we').scrollIntoView({
         behavior: 'smooth',
         block: 'end'
     })
