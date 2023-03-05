@@ -336,7 +336,6 @@ const updateFrame = (i) => {
         item.addEventListener('change', () => {
 
             quiz[i][1].answers[index].checked = true
-            quiz[i][1].answers[index].isClicked = true
             console.log(quiz[i][1].answers[index])
             if (quiz[i][1].answers[index].isRight === true&&quiz[i][1].answers[index].uniqueAnswer===true) {
                 quiz[i][1].answers[index].uniqueAnswer=false
@@ -363,16 +362,17 @@ const showResult = () => {
     
     let suggestion=''
     if(counter>=1&&counter<=7){
-        suggestion=`К сожалению, данный тест оказался для вас слишком сложным. Но не стоит унывать, ведь даже наши преподаватели когда-то были новичками! Рекомендованный курс для Вас  - Elementary ( General English )`
+        suggestion=`К сожалению, данный тест оказался для вас слишком сложным. Но не стоит унывать, ведь даже наши преподаватели когда-то были новичками! Рекомендованный курс для Вас  -  General English ( Elementary )`
     }
     else if(counter>=8&&counter<=14){
-        suggestion='У вас есть неплохая база на основе которой вы сможете достичь больших успехов! Рекомендованный курс для Вас - General English ( Pre-intermediate )'
+        suggestion='У вас уже неплохая база на основе которой вы сможете достичь больших успехов! Рекомендованный курс для Вас - General English ( Pre-intermediate )'
     }
     else if(counter>=15&&counter<=18){
-        suggestion='У вас есть неплохая база на основе которой вы сможете достичь больших успехов! Рекомендованный курс для Вас - General English ( Pre-intermediate )'
+        suggestion='У вас почти получилось! Ваша грамматика нуждается лишь в небольшой корректировке или повторении.  Рекомендованный курс для Вас - General English ( Intermediate )'
     }
     else if(counter>=19&&counter<=20){
-        suggestion=`Поздравляем, ваша грамматика на уверенном уровне, что даёт вам большое пространство для изучения остальных аспектов английского языка " Рекомендованный уровень - General English ( Upper-Intermediate ) или Pre-IELTS`
+        suggestion=`Поздравляем, ваша грамматика на уверенном уровне, что даёт вам большое пространство для дальнейшего изучения языка в различных его направлениях.  
+        Рекомендованный уровень - General English ( Upper-Intermediate ) или Pre-IELTS`
     }
 
     console.log(counter)
