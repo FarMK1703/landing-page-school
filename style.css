@@ -130,15 +130,26 @@ body::-webkit-scrollbar-thumb {
 
 
 
-header{
+.header-wrapper{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
   width: 100%;
-  background-color: #F5F5F5;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+
+header{
+  width: 100%;
+  background-image: url('./assets/pexels-pixabay-460672.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  
 
   
   
@@ -158,6 +169,7 @@ button:focus{
 
 header nav{
   width: 100%;
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -165,18 +177,18 @@ header nav{
   top: 0;
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 5%;
+  height: 80px;
   
   
 }
 
 
 header nav .logo{
-  border: 3.5px solid rgba(23,15,28,1);
+  border: 3.5px solid #fff;
   padding: 10px;
   font-size: 20px;
-  opacity: 0.60;
   font-weight: 600;
+  color: #fff;
 }
 
 
@@ -208,8 +220,7 @@ header nav .hamburger ul{
 header nav .hamburger ul li{
   width: 100%;
   height: 4px;
-  background-color:rgba(23,15,28,1) ;
-  opacity: 0.60;
+  background-color:#fff ;
   transition: 0.3s ease;
 }
 
@@ -217,11 +228,21 @@ header nav .hamburger ul li{
 header h1{
   text-align: center;
 
-  color: rgba(23,15,28,1);
+  color: #F5F5F5;
   font-size: 40px;
   font-weight: 500;
-  opacity: 0.7;
-  position: relative;
+ 
+  position: relative; 
+  
+}
+
+header .header-h1-container{
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
   
 }
 
@@ -234,7 +255,9 @@ header p{
   text-align: center;
   width: 800px;
   font-size: 20px;
-  opacity: 0.6;
+  color: #F5F5F5;
+  line-height: 22px;
+  
   
 }
 
@@ -242,13 +265,12 @@ header p{
 header .arrow{
   position: absolute;
   bottom: 10px;
-  width: 80px;
-  height: 80px;
-  background-image: url('./assets/arrow-down-black.svg');
+  width: 40px;
+  height: 40px;
+  background-image: url('./assets/arrow-down-white.svg');
   background-position: center;
   background-size: contain;
   cursor: pointer;
-  opacity: 0.6;
   transition: 0.3s ease;
   animation: bounce_arrow 1.5s ease-in infinite;
 }
@@ -501,9 +523,27 @@ main .quiz .quiz-game-answers .result p span{
 
 main .quiz .quiz-game .answers{
   width: 100%;
-  height: 40px;
-  font-size: 20px;
+  display: flex;
+  font-size: 18px;
   opacity: 0.6;
+  margin-top: 10px;
+}
+
+main .quiz .quiz-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    font-size: 16px;
+    opacity: 0.6;
+    line-height: 20px;
+
+}
+main .quiz .quiz-description img{
+  width: 80px;
+  height: 80px;
+  margin-bottom: 40px;
 }
 
 main .quiz .quiz-game .answers input{
@@ -1130,7 +1170,7 @@ main .work-proc{
     width: 60%;
   }
   main .quiz .quiz-game-answers{
-    margin-top: 100px;
+    margin-top: 130px;
   }
   main .quiz .quiz-game-answers{
     width: 90%;

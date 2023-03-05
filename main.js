@@ -44,7 +44,7 @@ const quiz = [
     ],
     
     [
-        { question: 'Sorry, I _ not __you, please say it again' },
+        { question: 'Sorry, I __ not __ you, please say it again' },
         {
             answers: [
                 { text: 'Do, heard', isRight: false, checked: false },
@@ -54,26 +54,15 @@ const quiz = [
             ]
         }
     ],
+   
     [
-        { question: '__ just one orange left! – But ___ many of them an hour ago!' },
-        {
-            answers: [
-                { text: 'There’s, there was', isRight: false, checked: false },
-                { text: 'There was, there was', isRight: false, checked: false },
-                { text: 'There’s, there were', isRight: true, uniqueAnswer:true,  checked: false },
-                { text: 'There were, there were', isRight: false, checked: false },
-                
-            ]
-        }
-    ],
-    [
-        { question: 'Who is __ in this room? – I am. – No, not you. I am ___ than you.' },
+        { question: 'Who is __ in this room? – I am. – No, not you. I am __ than you.' },
         {
             answers: [
                 { text: 'The oldest, older', isRight: true, uniqueAnswer:true, checked: false },
-                { text: 'There was, there was', isRight: false, checked: false },
-                { text: 'There’s, there were', isRight: false,   checked: false },
-                { text: 'There were, there were', isRight: false, checked: false },
+                { text: 'Elder, older', isRight: false, checked: false },
+                { text: 'The oldest, elder', isRight: false,   checked: false },
+                { text: 'Older, the oldest', isRight: false, checked: false },
                 
             ]
         }
@@ -117,33 +106,20 @@ const quiz = [
         }
     ],
     [
-        { question: ' They were sitting __ the sofa' },
-        {
-            answers: [
-                
-                { text: 'In', isRight: false, checked: false },
-                { text: 'On', isRight: true, uniqueAnswer:true, checked: false },
-                { text: 'At', isRight: false,   checked: false },
-                { text: 'Under', isRight: false, checked: false },
-                
-                
-            ]
-        }
-    ],
-    [
         { question: 'It is so dusty here. __ open the window and let some air in here?' },
         {
             answers: [
                 
                 { text: 'Are you going to', isRight: false, checked: false },
-                { text: 'Are you going', isRight: false,   checked: false },
                 { text: 'Will you open', isRight: true, uniqueAnswer:true, checked: false },
+                { text: 'Are you going', isRight: false,   checked: false },
                 { text: 'Do you open', isRight: false, checked: false },
                 
                 
             ]
         }
     ],
+   
     [
         { question: 'You __ him with this – No, it’s time __ start doing things on his own. I don’t think I __ interfere.' },
         {
@@ -152,20 +128,20 @@ const quiz = [
                 { text: '‘d better to help, for him to, should', isRight: false, checked: false },
                 { text: '‘d better helping, for him to, should', isRight: false,   checked: false },
                 { text: '‘d better to help, for him, should', isRight: false, checked: false },
-                { text: '‘d better help, for him to, should*', isRight: true, uniqueAnswer:true, checked: false },
+                { text: '‘d better help, for him to, should', isRight: true, uniqueAnswer:true, checked: false },
                 
                 
             ]
         }
     ],
     [
-        { question: 'I have been living here for about a month and I ___ saying “hello” to any stranger, passing by' },
+        { question: 'I have been living here for about a month and I __ saying “hello” to any stranger, passing by' },
         {
             answers: [
                 
-                { text: 'Used to', isRight: false, checked: false },
+                { text: 'used to', isRight: false, checked: false },
                 { text: '‘m getting used to', isRight: true, uniqueAnswer:true, checked: false },
-                { text: 'Usually', isRight: false,   checked: false },
+                { text: 'usually', isRight: false,   checked: false },
                 { text: '‘m used to', isRight: false, checked: false },
                 
                 
@@ -174,7 +150,7 @@ const quiz = [
         }
     ],
     [
-        { question: 'Your learning would be more productive if you ___ regularly' },
+        { question: 'Your learning would be more productive if you __ regularly' },
         {
             answers: [
                 { text: 'Studied', isRight: true, uniqueAnswer:true, checked: false },
@@ -188,7 +164,7 @@ const quiz = [
         }
     ],
     [
-        { question: 'You can’t do it, thousands of people  here and if you do, their lives __.' },
+        { question: 'You can’t do it, thousands of people __ here and if you do, their lives __.' },
         {
             answers: [
                 
@@ -219,14 +195,14 @@ const quiz = [
         }
     ],
     [
-        { question: 'In case you open this kind of visa you can ___ study, nor work' },
+        { question: 'The art gallery __ our group visited yesterday was recognized as the best place of sightseeing in the city.' },
         {
             answers: [
                 
-                { text: 'Either', isRight: false, checked: false },  
-                { text: 'Both', isRight: false,   checked: false },
-                { text: '-', isRight: false, checked: false },
-                { text: 'Neither', isRight: true, uniqueAnswer:true, checked: false },
+                { text: 'What', isRight: false, checked: false },  
+                { text: 'Where', isRight: false,   checked: false },
+                { text: 'When', isRight: false, checked: false },
+                { text: 'Which', isRight: true, uniqueAnswer:true, checked: false },
                 
                 
                 
@@ -234,14 +210,14 @@ const quiz = [
         }
     ],
     [
-        { question: ' I was worried, you know. We have news from you, however _ of your friends told me anything. Could you give me _ sign that everything is OK?' },
+        { question:"I wish I __ buy this amazing branded handbag next time, but I have no enough money. It's too expensive." },
         {
             answers: [
                 
-                { text: 'None, none, some', isRight: false, checked: false },  
-                { text: 'No, none, anything', isRight: false,   checked: false },
-                { text: '-', isRight: false, checked: false },
-                { text: 'No, none, any', isRight: true, uniqueAnswer:true, checked: false },
+                { text: 'Had', isRight: false, checked: false },  
+                { text: 'Would', isRight: false,   checked: false },
+                { text: 'Will', isRight: false, checked: false },
+                { text: 'Could', isRight: true, uniqueAnswer:true, checked: false },
                 
                 
                 
@@ -249,14 +225,14 @@ const quiz = [
         }
     ],
     [
-        { question: 'This is the girl ___ I was talking about.' },
+        { question: 'Jimmy, I think you will enjoy our trip. I can tell you a lot about our city. Look! There __ a cool restaurant on this street, but now you can see a mall here.' },
         {
             answers: [
                 
-                { text: 'Who', isRight: false, checked: false },  
-                { text: 'Whom', isRight: false,   checked: false },
-                { text: '–', isRight: true, uniqueAnswer:true, checked: false },
-                { text: 'Whose', isRight: false, checked: false },
+                { text: 'Was', isRight: false, checked: false },  
+                { text: 'Is', isRight: false,   checked: false },
+                { text: 'Used to be', isRight: true, uniqueAnswer:true, checked: false },
+                { text: 'Had been', isRight: false, checked: false },
                
                 
                 
@@ -264,14 +240,46 @@ const quiz = [
         }
     ],
     [
-        { question: 'She is amazing, ___?' },
+        { question: 'Add the correct adverb to the sentence, considering past action. __ had the company started its business operations than it was broken down by huge competition.' },
         {
             answers: [
                 
-                { text: 'Is her?', isRight: false, checked: false },  
-                { text: 'Is she?', isRight: false,   checked: false },
-                { text: 'Isn’t she', isRight: true, uniqueAnswer:true, checked: false },
-                { text: 'Isn’t her?', isRight: false, checked: false },
+                { text: 'Barely', isRight: false, checked: false },  
+                { text: 'Scarcely', isRight: false,   checked: false },
+                { text: 'Hardly', isRight: true, uniqueAnswer:true, checked: false },
+                { text: 'No sooner', isRight: false, checked: false },
+               
+                
+                
+            ]
+        }
+    ],
+    [
+        { question: "Ann prefers __ coffee to __ tea, therefore, her preference in selecting __ most appealing beans in the local market is not shaped by the product's price. She buys what she wants to drink." },
+        {
+            answers: [
+                
+                { text: 'zero article … zero article … the', isRight: true, uniqueAnswer:true, checked: false },
+                { text: 'the ...the...the', isRight: false, checked: false },  
+                { text: 'A ...a...the', isRight: false,   checked: false },
+                
+               
+                
+                
+            ]
+        }
+    ],
+    [
+        { question: "Alex, please, take your new cellphone and take a shot now, just __ mine fails to do it – the memory is full." },
+        {
+            answers: [
+                
+                
+                { text: 'because', isRight: false, checked: false },  
+                { text: 'in case', isRight: true, uniqueAnswer:true, checked: false },
+                { text: 'despite', isRight: false,   checked: false },
+                { text: 'due to', isRight: false,   checked: false },
+                
                
                 
                 
@@ -297,6 +305,7 @@ const updateFrame = (i) => {
 
     document.querySelector('.quiz-game-question').innerHTML = `${quiz[i][0].question}`
     document.querySelector('.quiz-game-answers').innerHTML = ''
+    document.querySelector('.quiz-description').innerHTML = ''
     quiz[i][1].answers.map((item) => {
 
 
@@ -351,12 +360,19 @@ const updateFrame = (i) => {
 
 const showResult = () => {
     let counter = results.length
+    
     let suggestion=''
-    if(counter<=17){
-        suggestion='У Вас хороший результат. Мы рекомендуем Вам курс - <span>General English</span>'
+    if(counter>=1&&counter<=7){
+        suggestion=`К сожалению, данный тест оказался для вас слишком сложным. Но не стоит унывать, ведь даже наши преподаватели когда-то были новичками! Рекомендованный курс для Вас  - Elementary ( General English )`
     }
-    else if(counter>17){
-        suggestion='У Вас великолепный результат. Мы рекомендуем Вам курс - <span>PRE-IELTS English</span>'
+    else if(counter>=8&&counter<=14){
+        suggestion='У вас есть неплохая база на основе которой вы сможете достичь больших успехов! Рекомендованный курс для Вас - General English ( Pre-intermediate )'
+    }
+    else if(counter>=15&&counter<=18){
+        suggestion='У вас есть неплохая база на основе которой вы сможете достичь больших успехов! Рекомендованный курс для Вас - General English ( Pre-intermediate )'
+    }
+    else if(counter>=19&&counter<=20){
+        suggestion=`Поздравляем, ваша грамматика на уверенном уровне, что даёт вам большое пространство для изучения остальных аспектов английского языка " Рекомендованный уровень - General English ( Upper-Intermediate ) или Pre-IELTS`
     }
 
     console.log(counter)
